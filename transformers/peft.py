@@ -65,8 +65,8 @@ model.add_adapter(peft_config)
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=tokenized_eli5["train"],
-    eval_dataset=tokenized_eli5["test"],
+    train_dataset=lm_dataset["train"],
+    eval_dataset=lm_dataset["test"],
     data_collator=data_collator,
 )
 trainer.train()
