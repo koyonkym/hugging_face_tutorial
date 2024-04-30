@@ -8,3 +8,4 @@ soundfile==0.12.1
 librosa==0.10.1
 peft==0.10.0
 bitsandbytes==0.42.0
+trl==0.8.6
